@@ -1,0 +1,7 @@
+links:
+- name: Home
+  link: /
+- name: Download
+  link: /download
+- name: About
+  link: /about/

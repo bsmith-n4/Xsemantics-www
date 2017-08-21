@@ -1,0 +1,31 @@
+title: Eclipse Xsemantics
+url: "https://www.Eclipse.org"
+baseurl: /Xsemantics
+
+collections:
+  staff_members:
+    output: false
+
+jekyll-archives:
+  enabled:
+    - "categories"
+
+exclude: ["Gemfile", "Gemfile.lock", "README.md"]
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: "index.html"
+      type: "pages"
+    values:
+      layout: "default"
+
+gems:
+  - "jekyll-feed"
+  - "jekyll-paginate"
+  - "jekyll-archives"
+  - "jekyll-asciidoc"
