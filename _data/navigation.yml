@@ -3,5 +3,11 @@ links:
   link: /
 - name: Download
   link: /download
+- name: Blog
+  link: /blog
+- name: Features
+  link: /features
+- name: Test
+  link: /test
 - name: About
   link: /about/
