@@ -11,7 +11,7 @@ options = {
 	/https\:\/\/www.linkedin.com\/company\/eclipse-foundation/]
 }
 
-task :default => ["serve"]
+task :default => ["test"]
 
 desc "cleans the output directory"
 task :clean do
