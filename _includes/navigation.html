@@ -11,38 +11,8 @@
 				{% if link.link == page.url %}
 					{% assign class = class | append: " active" %}
 				{% endif %}
-				<li><a href="{{ site.baseurl }}{{ link.link }}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a></li>
+				<li><a href="{{ site.url }}{{ site.baseurl }}{{ link.link }}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a></li>
 			{% endfor %}
 		</ol> 
 	</div> 
 </section>
-
-
-
-<!--
-    <section class="hidden-print default-breadcrumbs" id="breadcrumb">
-      <div class="container">
-        <h3 class="sr-only">Breadcrumbs</h3>
-        <div class="row">
-          <div class="col-sm-16 padding-left-30"><ol class="breadcrumb">
-          
-			{% for link in site.data.navigation.links %}
-				{% assign class = "" %}
-				{% if link.highlight %}
-					{% assign class = class | append: " highlight" %}
-				{% endif %}
-
-				{% if link.link == page.url %}
-					{% assign class = class | append: " active" %}
-				{% endif %}
-				<li><a href="{{ site.baseurl }}{{ link.link }}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a></li>
-			{% endfor %}
-
-          </ol></div>
-          <div class="col-sm-8 margin-top-15"></div>
-        </div>
-        
-      </div>
-    </section>
-
-    -->

@@ -10,7 +10,7 @@ jekyll-archives:
   enabled:
     - "categories"
 
-exclude: ["Gemfile", "Gemfile.lock", "README.md"]
+exclude: ["Gemfile", "Gemfile.lock", "README.md", "Rakefile"]
 
 defaults:
   - scope:
