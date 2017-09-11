@@ -1,0 +1,69 @@
+---
+layout: default
+---
+
+<style>
+.padded {padding-top: 50px;}
+</style>
+
+<section>
+	<div class="container" {% if page.full_width %}style="max-width: 100%"{% endif %}>
+		{% if page.heading %}
+			<h2>{{ page.heading }}</h2>
+		{% elsif page.title %}
+			<h2>{{ page.title }}</h2>
+		{% endif %}
+		{% if page.subtitle %}
+			<p class="subtext">{{ page.subtitle }}
+		{% endif %}
+	</div>
+</section>
+
+<div class="lead">
+{{ content }}
+</div>
+
+<div class="step-by-step">
+   <div class="container">
+      <div class="row intro">
+         <div class="col-xs-24">
+            <h2>Participate &amp; Contribute</h2>
+            <p>Get involved in Eclipse projects to help contribute to their success.<br> We welcome users and adopters as part of the community. 
+         </div>
+      </div>
+   </div>
+</div>
+<div class="container">
+   <div class="timeline">
+      <div class="row">
+         <div class="col-md-6">
+            <h1 class="fw-600">Installation</h1>
+            <p>Visit the Downloads page and get started with Xsemantics
+            <p><a class="btn btn-warning" href="download">Download</a>
+         </div>
+         <div class="col-md-6 gs-item">
+            <h1>Source</h1>
+            <p>The source of Xsemantics can be viewed on GitHub. Feel free to make contributions by forking the repository and creating a pull request.
+            <p><a class="btn btn-warning" href="https://github.com/LorenzoBettini/xsemantics"><i class="fa fa-github"></i> Fork on GitHub</a>
+         </div>
+
+         
+         <div class="col-md-6 gs-item">
+            <h1>Community</h1>
+            <p>Get involved with the Xsemantics project using the following resources
+            <ul>
+               <li>Get the latest news in the developer <a href="https://dev.eclipse.org/mailman/listinfo/xsemantics-dev">Mailing List</a></li>
+               <li>Join the discussion in the Eclipse <a href="https://www.eclipse.org/forums/index.php/f/380/">Xsemantics Forum</a></li>      
+            </ul>
+         </div>
+         <div class="col-md-6 gs-item">
+            <h1>Support</h1>
+            <p>As with all projects, there are always bugs and reporting such issues helps with the development of the project.
+            <ul>
+               <li>Open an issue at the Xsemantics <a href="https://github.com/LorenzoBettini/xsemantics/issues">GitHub Issues</a></li>
+               <li>For comprehensive overview of all features of Xsemantics, please see the <a href="http://xsemantics.sourceforge.net/xsemantics-documentation/">Documentation</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</div>

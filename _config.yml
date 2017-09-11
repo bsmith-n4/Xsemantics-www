@@ -1,6 +1,6 @@
 title: Eclipse Xsemantics
-url: "https://www.Eclipse.org"
-baseurl: /Xsemantics
+url: "https://www.eclipse.org"
+baseurl: /xsemantics
 
 collections:
   staff_members:
@@ -10,7 +10,12 @@ jekyll-archives:
   enabled:
     - "categories"
 
-exclude: ["Gemfile", "Gemfile.lock", "README.md"]
+exclude: 
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "README.md"
+  - "Rakefile"
+  - vendor
 
 defaults:
   - scope:
@@ -29,12 +34,4 @@ defaults:
     values:
       layout: "post"
 
-paginate: 10
-paginate_path: "/blog/:num/"
 permalink: pretty
-
-gems:
-  - "jekyll-feed"
-  - "jekyll-paginate"
-  - "jekyll-archives"
-  - "jekyll-asciidoc"

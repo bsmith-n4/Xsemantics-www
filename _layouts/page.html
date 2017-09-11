@@ -1,6 +1,12 @@
 ---
 layout: default
 ---
+
+<style>
+.spaced li {line-height: 2;}
+</style>
+
+
 <section>
 	<div class="container" {% if page.full_width %}style="max-width: 100%"{% endif %}>
 		{% if page.heading %}
@@ -9,7 +15,7 @@ layout: default
 			<h2>{{ page.title }}</h2>
 		{% endif %}
 		{% if page.subtitle %}
-			<p class="subtext">{{ page.subtitle }}</p>
+			<p class="subtext">{{ page.subtitle }}
 		{% endif %}
 	</div>
 </section>
