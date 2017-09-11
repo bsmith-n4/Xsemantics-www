@@ -23,3 +23,4 @@ $ bundle exec jekyll serve
 ~~~
 
 The WWW contents are copied by default to `/_site`.
+
